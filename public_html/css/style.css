@@ -1,0 +1,231 @@
+
+
+/*--------CARUSEL STARTS HERE----------*/
+.carousel-wrapper {
+  overflow: hidden;
+  width: 100%;
+  margin: auto;
+}
+
+
+.carousel-wrapper * {
+  box-sizing: border-box;
+}
+
+.carousel {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  margin-top: 100px;
+}
+
+.carousel__photo {
+  opacity: 0;
+  position: absolute;
+  top:-105px;
+  width: 100%;
+  height: 50vw;
+  margin: 0vw;
+
+  z-index: 100;
+  transition: transform .5s, opacity .5s, z-index .5s;
+}
+
+.carousel__photo.initial,
+.carousel__photo.active {
+  opacity: 1;
+  position: relative;
+  z-index: 900;
+}
+
+.carousel__photo.prev,
+.carousel__photo.next {
+  z-index: 800;
+}
+
+.carousel__photo.prev {
+  transform: translateX(-100%);
+}
+
+.carousel__photo.next {
+  transform: translateX(100%);
+}
+
+.carousel__button--prev,
+.carousel__button--next {
+  position: absolute;
+  top:35%;
+  width: 3rem;
+  height: 3rem;
+  background-color: #FFF;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  cursor: pointer; 
+  z-index: 1001; 
+  border:1px solid black;
+
+}
+
+.carousel__button--prev {
+  left:0;
+}
+
+.carousel__button--next {
+  right:0;
+}
+
+.carousel__button--prev::after,
+.carousel__button--next::after {
+  content: " ";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  left: 54%;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.carousel__button--next::after {
+  left: 47%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+/*--------CARUSEL ENDS HERE----------*/
+
+
+
+
+/*------BODY CSS-------*/
+
+.col-md-7:hover{background-color: rgb(247, 247, 247);}
+body {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+  "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  position: relative; }
+  
+main{
+     padding-bottom: 20px; }
+
+#Logo {height: 100px;
+       width: 100px;
+       position: sticky;
+       margin-right:20px ;
+}
+#Logo2{height: 150px;
+        width: 150px;}
+
+
+        @media only screen  and (max-width: 470px) 
+        {#Columns {height: fit-content; width: fit-content;} 
+      
+
+      
+      
+      
+      
+      }
+
+
+.ftco-section{padding-top: 50px;}
+
+
+#activity{padding-top: 30px;}
+
+.row{width: 100%; padding-left: 30px;}
+.learnMore{color: blue;}
+.learnMore:hover{color: cornflowerblue}
+
+p {
+  color: #000000;
+  font-weight: 300; }
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+  "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+
+a {
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease; }
+  a, a:hover {
+    text-decoration: none !important; }
+
+
+
+
+    #shw1, #shw2, #shw3{ border-radius: 10px;}
+    #shw3{height: 80%; width: 100%;}
+
+
+nav{position: fixed; }
+
+/*Columns below slideshow */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align:center ;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+
+/* Featurettes below columns*/
+
+.featurette-divider {
+  margin: 5rem 0; 
+}
+
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+html, body { overflow-x: hidden;}
+
+
+
+/*------Footer CSS------*/
+footer {background-color: rgb(255, 255, 255);}
+          .footer-16371 {
+            padding-bottom: 70px;
+            padding-top: 70px;
+            font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+            "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+            .footer-16371 .footer-site-logo {
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 900; }
+              .footer-16371 .footer-site-logo a {
+                color: #2f2b3a; }
+            .footer-16371 .nav-links {
+              padding: 0;
+              margin: 0; }
+              .footer-16371 .nav-links li {
+                display: inline-block; }
+                .footer-16371 .nav-links li a {
+                  padding: 10px;
+                  color: #000; }
+                  .footer-16371 .nav-links li a:hover {
+                    color: #007bff; }
+
+            .footer-16371 .copyright .mb-0 {
+              color: #000000; }
+/*------Footer CSS ends here-------*/
+
+
+/*------BODY CSS ENDS HERE------*/
+
+  
+
+
+
+

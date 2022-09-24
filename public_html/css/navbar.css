@@ -1,0 +1,69 @@
+/*-------NAVBAR CSS-------*/
+nav {
+    position:sticky;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+    background-color: #288028;
+    transition: top 500ms ease-in-out;
+    width: 100vw;
+  }
+  
+  nav.scroll-up,
+  nav:focus-within {
+    top: 0;
+  }
+  
+  nav.scroll-down {
+    top: -100%;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    margin: -1em;
+    padding-right: 12.5rem;
+    margin-left:30px ;
+  }
+  
+  .navbar-nav a {
+    display: inline-block;
+    margin: 0 1em;
+  }
+  
+  .navbar-brand img{height: 90px; padding-left:20px ;}
+  
+  nav a {
+    color: #fffffff3;
+    text-decoration: none;
+    font-size: 0.8vw;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-right: 10px;
+
+    
+  }
+
+  nav a:hover{color: rgb(168, 168, 168)}
+
+  
+
+  @media screen and (max-width: 800px) {
+    nav a {
+      font-size: 1.5vw;
+      margin-right: 0px;
+      padding-right: 0px;
+    }
+
+   nav{padding: 0.5rem 1rem;
+   }
+
+   .navbar-brand img{height: 15vw; padding-left:20px ;}
+
+} 
+/*-------NAVBAR CSS ENDS HERE-------*/
+
+  
+
+
